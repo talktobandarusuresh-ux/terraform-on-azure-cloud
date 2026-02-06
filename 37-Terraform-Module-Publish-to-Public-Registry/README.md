@@ -30,7 +30,7 @@ description: Learn Terraform Module Publish to Terraform Public Registry
 ```t
 # Clone Github Repo
 git clone https://github.com/<YOUR_GITHUB_ID>/<YOUR_REPO>.git
-git clone https://github.com/stacksimplify/terraform-azurerm-staticwebsitepublic.git
+git clone https://github.com/AzureCloud/terraform-azurerm-staticwebsitepublic.git
 ```
 
 ## Step-04: Copy files from terraform-manifests to local repo & Check-In Code
@@ -49,7 +49,7 @@ git commit -am "TF Module Files First Commit"
 git push
 
 # Verify the same on Remote Repository
-https://github.com/stacksimplify/terraform-azurerm-staticwebsitepublic.git
+https://github.com/AzureCloud/terraform-azurerm-staticwebsitepublic.git
 ```
 
 
@@ -70,7 +70,7 @@ https://github.com/stacksimplify/terraform-azurerm-staticwebsitepublic.git
 - Click on **Publish Module**
 
 ## Step-07: Review the newly Published Module
-- **URL:** https://registry.terraform.io/modules/stacksimplify/staticwebsitepublic/azurerm/latest
+- **URL:** https://registry.terraform.io/modules/AzureCloud/staticwebsitepublic/azurerm/latest
 - Review the Module Tabs on Terraform Cloud
 1. Readme
 2. Inputs
@@ -91,7 +91,7 @@ https://github.com/stacksimplify/terraform-azurerm-staticwebsitepublic.git
 # Call our Custom Terraform Module which we built earlier
 module "azure_static_website" {
   #source = "./modules/azure-static-website"  
-  source  = "stacksimplify/staticwebsitepublic/azurerm"
+  source  = "AzureCloud/staticwebsitepublic/azurerm"
   version = "1.0.0"
 
   # Resource Group
@@ -117,7 +117,7 @@ Observation:
 
 # Sample Output for reference
 Initializing modules...
-Downloading stacksimplify/staticwebsitepublic/azurerm 1.0.0 for azure_static_website...
+Downloading AzureCloud/staticwebsitepublic/azurerm 1.0.0 for azure_static_website...
 - azure_static_website in .terraform/modules/azure_static_website
 
 # Terraform Validate
@@ -158,7 +158,7 @@ rm -rf terraform.tfstate*
 
 
 ## Step-11: Module Management on Terraform Public Registry
-- URL: https://registry.terraform.io/modules/stacksimplify/staticwebsitepublic/azurerm/latest
+- URL: https://registry.terraform.io/modules/AzureCloud/staticwebsitepublic/azurerm/latest
 - You should be logged in to `Terraform Public Registry` with your github account with which you published this module.
 1. Resync Module
 2. Delete Module Version
@@ -187,7 +187,7 @@ git push
 5. Click on "Publish Release"
 
 # Verify
-https://registry.terraform.io/modules/stacksimplify/staticwebsitepublic/azurerm/latest
+https://registry.terraform.io/modules/AzureCloud/staticwebsitepublic/azurerm/latest
 In Versions drop-down, you should notice 1.0.0 and 2.0.0(latest) tags
 
 # Update your Module Version tag to use new version of Module

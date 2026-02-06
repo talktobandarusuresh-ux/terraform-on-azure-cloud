@@ -16,24 +16,24 @@ module "azure_static_website" {
   #source = "./modules/azure-static-website"  
   
   # Terraform Public Registry
-  #source  = "stacksimplify/staticwebsitepb/azurerm"
+  #source  = "AzureCloud/staticwebsitepb/azurerm"
   #version = "1.0.0"
 
   # Terraform Local Module
   #source = "./modules/azure-static-website"  
   
   # Terraform Public Registry
-  #source  = "stacksimplify/staticwebsitepb/azurerm"
+  #source  = "AzureCloud/staticwebsitepb/azurerm"
   #version = "1.0.0"
 
   # Github Clone over HTTPS 
-  source = "github.com/stacksimplify/terraform-azurerm-staticwebsitepublic"
+  source = "github.com/AzureCloud/terraform-azurerm-staticwebsitepublic"
 
   # Github Clone over SSH (if git SSH configured with your repo - https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
-  #source = "git@github.com:stacksimplify/terraform-azurerm-staticwebsitepublic.git"
+  #source = "git@github.com:AzureCloud/terraform-azurerm-staticwebsitepublic.git"
 
   # Github HTTPS with selecting a Specific Release Tag
-  #source = "git::https://github.com/stacksimplify/terraform-azurerm-staticwebsitepublic.git?ref=1.0.0"
+  #source = "git::https://github.com/AzureCloud/terraform-azurerm-staticwebsitepublic.git?ref=1.0.0"
 
   # Resource Group
   location = "eastus"
@@ -71,7 +71,7 @@ rm -rf .terraform*
 1. Github clone over ssh
 ```t
 module "azure_static_website" {
-  source = "git@github.com:stacksimplify/terraform-azurerm-staticwebsitepb.git"
+  source = "git@github.com:AzureCloud/terraform-azurerm-staticwebsitepb.git"
   ... 
   ...  other code
 }
@@ -79,7 +79,7 @@ module "azure_static_website" {
 2. Bitbucket
 ```t
 module "azure_static_website" {
-  source = "bitbucket.org/stacksimplify/terraform-azurerm-staticwebsitepb"
+  source = "bitbucket.org/AzureCloud/terraform-azurerm-staticwebsitepb"
   ... 
   ...  other code
 }

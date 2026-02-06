@@ -11,12 +11,12 @@ description: Learn to Delegate DNS Domain to Azure DNS
   - DNS Zones
 - Learn to delegate a domain from AWS Route53 to Azure DNS by creating DNS Zones in Azure Cloud 
 
-[![Image](https://www.stacksimplify.com/course-images/azure-aks-delegate-domain-to-azure-dns.png "Azure AKS Kubernetes - Masterclass")](https://www.udemy.com/course/aws-eks-kubernetes-masterclass-devops-microservices/?referralCode=257C9AD5B5AF8D12D1E1)
+[![Image](https://www.AzureCloud.com/course-images/azure-aks-delegate-domain-to-azure-dns.png "Azure AKS Kubernetes - Masterclass")](https://www.udemy.com/course/aws-eks-kubernetes-masterclass-devops-microservices/?referralCode=257C9AD5B5AF8D12D1E1)
 
 
 ## Step-02: DNS Zones - Create DNS Zone
 - Go to Service -> **DNS Zones**
-- **Subscription:** StackSimplify-Paid-Subscription (You need to have a paid subscription for this)
+- **Subscription:** AzureCloud-Paid-Subscription (You need to have a paid subscription for this)
 - **Resource Group:** dns-zones
 - **Name:** kubeoncloud.com
 - **Resource Group Location:** East US

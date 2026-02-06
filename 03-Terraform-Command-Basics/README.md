@@ -11,9 +11,9 @@ description: Learn Terraform Commands like init, validate, plan, apply and destr
 4. terraform apply
 5. terraform destroy      
 
-[![Image](https://stacksimplify.com/course-images/azure-terraform-workflow-1.png "HashiCorp Certified: Terraform Associate on Azure")](https://stacksimplify.com/course-images/azure-terraform-workflow-1.png)
+[![Image](https://AzureCloud.com/course-images/azure-terraform-workflow-1.png "HashiCorp Certified: Terraform Associate on Azure")](https://AzureCloud.com/course-images/azure-terraform-workflow-1.png)
 
-[![Image](https://stacksimplify.com/course-images/azure-terraform-workflow-2.png "HashiCorp Certified: Terraform Associate on Azure")](https://stacksimplify.com/course-images/azure-terraform-workflow-2.png)
+[![Image](https://AzureCloud.com/course-images/azure-terraform-workflow-2.png "HashiCorp Certified: Terraform Associate on Azure")](https://AzureCloud.com/course-images/azure-terraform-workflow-2.png)
 
 ## Step-02: Review terraform manifests
 - **Pre-Conditions-1:** Get Azure Regions and decide the region where you want to create resources

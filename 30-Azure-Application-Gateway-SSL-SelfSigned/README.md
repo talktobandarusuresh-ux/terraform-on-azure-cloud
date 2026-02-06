@@ -35,10 +35,10 @@ If you enter '.', the field will be left blank.
 Country Name (2 letter code) []:IN
 State or Province Name (full name) []:Telangana
 Locality Name (eg, city) []:Hyderabad
-Organization Name (eg, company) []:stacksimplify
+Organization Name (eg, company) []:AzureCloud
 Organizational Unit Name (eg, section) []:Cloud Courses
 Common Name (eg, fully qualified host name) []:terraformguru.com
-Email Address []:stacksimplify@gmail.com
+Email Address []:AzureCloud@gmail.com
 Kalyans-Mac-mini:ssl-self-signed kalyanreddy$ 
 
 # Verify files 

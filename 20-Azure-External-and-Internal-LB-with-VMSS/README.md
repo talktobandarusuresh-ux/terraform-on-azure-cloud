@@ -296,9 +296,9 @@ sudo systemctl stop firewalld
 sudo systemctl disable firewalld
 sudo chmod -R 777 /var/www/html 
 sudo mkdir /var/www/html/appvm
-sudo echo "Welcome to stacksimplify - AppVM App1 - VM Hostname: $(hostname)" > /var/www/html/index.html
-sudo echo "Welcome to stacksimplify - AppVM App1 - VM Hostname: $(hostname)" > /var/www/html/appvm/hostname.html
-sudo echo "Welcome to stacksimplify - AppVM App1 - App Status Page" > /var/www/html/appvm/status.html
+sudo echo "Welcome to AzureCloud - AppVM App1 - VM Hostname: $(hostname)" > /var/www/html/index.html
+sudo echo "Welcome to AzureCloud - AppVM App1 - VM Hostname: $(hostname)" > /var/www/html/appvm/hostname.html
+sudo echo "Welcome to AzureCloud - AppVM App1 - App Status Page" > /var/www/html/appvm/status.html
 sudo echo '<!DOCTYPE html> <html> <body style="background-color:rgb(255, 99, 71);"> <h1>Welcome to Stack Simplify - AppVM APP-1 </h1> <p>Terraform Demo</p> <p>Application Version: V1</p> </body></html>' | sudo tee /var/www/html/appvm/index.html
 sudo curl -H "Metadata:true" --noproxy "*" "http://169.254.169.254/metadata/instance?api-version=2020-09-01" -o /var/www/html/appvm/metadata.html
 CUSTOM_DATA  
@@ -783,7 +783,7 @@ curl http://10.1.11.4
 
 # Sample Output
 [root@hr-dev-app-linuxvm ~]# curl http://10.1.11.4
-Welcome to stacksimplify - AppVM App1 - VM Hostname: hr-dev-app-linuxvm
+Welcome to AzureCloud - AppVM App1 - VM Hostname: hr-dev-app-linuxvm
 [root@hr-dev-app-linuxvm ~]# 
 
 # Exit from App VM
@@ -805,7 +805,7 @@ curl http://10.1.11.241
 
 ## Sample Ouptut
 [root@hr-dev-bastion-linuxvm tmp]# curl http://10.1.11.241
-Welcome to stacksimplify - AppVM App1 - VM Hostname: hr-dev-app-linuxvm
+Welcome to AzureCloud - AppVM App1 - VM Hostname: hr-dev-app-linuxvm
 [root@hr-dev-bastion-linuxvm tmp]# 
 
 
@@ -835,7 +835,7 @@ curl http://10.1.11.241
 
 # Sample Output
 [root@hr-dev-web-linuxvm conf.d]# curl http://10.1.11.241
-Welcome to stacksimplify - AppVM App1 - VM Hostname: hr-dev-app-linuxvm
+Welcome to AzureCloud - AppVM App1 - VM Hostname: hr-dev-app-linuxvm
 [root@hr-dev-web-linuxvm conf.d]# 
 
 # From Web VM Host - perform Curl Test using Web VM Private IP
@@ -844,7 +844,7 @@ curl http://10.1.1.4
 
 # Sample Output
 [root@hr-dev-web-linuxvm conf.d]# curl http://10.1.1.4
-Welcome to stacksimplify - AppVM App1 - VM Hostname: hr-dev-app-linuxvm
+Welcome to AzureCloud - AppVM App1 - VM Hostname: hr-dev-app-linuxvm
 [root@hr-dev-web-linuxvm conf.d]# 
 
 # Access Application using Internet facing Azure Standard Load Balancer Public

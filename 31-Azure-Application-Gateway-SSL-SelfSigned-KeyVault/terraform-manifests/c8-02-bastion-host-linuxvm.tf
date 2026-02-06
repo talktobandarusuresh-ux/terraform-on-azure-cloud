@@ -11,7 +11,7 @@ sudo systemctl stop firewalld
 sudo systemctl disable firewalld
 sudo yum install -y telnet
 sudo chmod -R 777 /var/www/html 
-sudo echo "Welcome to stacksimplify - Bastion Host - VM Hostname: $(hostname)" > /var/www/html/index.html
+sudo echo "Welcome to AzureCloud - Bastion Host - VM Hostname: $(hostname)" > /var/www/html/index.html
 CUSTOM_DATA  
 }
 
