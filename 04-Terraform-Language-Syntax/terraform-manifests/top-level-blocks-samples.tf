@@ -8,13 +8,13 @@ terraform {
       version = ">= 2.0"
     }
   }
-  # Terraform State Storage to Azure Storage Container
-  backend "azurerm" {
-    resource_group_name  = "terraform-storage-rg"
-    storage_account_name = "terraformstate201111"
-    container_name       = "tfstatefiles"
-    key                  = "terraform.tfstate"
-  }
+  # # Terraform State Storage to Azure Storage Container
+  # backend "azurerm" {
+  #   resource_group_name  = "terraform-storage-rg"
+  #   storage_account_name = "terraformstate201111"
+  #   container_name       = "tfstatefiles"
+  #   key                  = "terraform.tfstate"
+  # }
 }
 # create a resource group for terraform state storage
 resource "azurerm_resource_group" "tfstate_rg" {
