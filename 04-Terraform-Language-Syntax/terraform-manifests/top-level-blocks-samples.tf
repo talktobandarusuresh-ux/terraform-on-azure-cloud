@@ -111,6 +111,6 @@ module "network" {
 
   use_for_each = false
 
-  depends_on = [azurerm_resource_group.example]
+  #depends_on = [azurerm_resource_group.example]
 }
 #####################################################################
