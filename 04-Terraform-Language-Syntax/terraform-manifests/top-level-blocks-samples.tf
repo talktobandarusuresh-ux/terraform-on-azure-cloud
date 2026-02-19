@@ -16,7 +16,25 @@ terraform {
     key                  = "terraform.tfstate"
   }
 }
-
+# create a resource group for terraform state storage
+resource "azurerm_resource_group" "tfstate_rg" {
+  name     = "terraform-storage-rg"
+  location = "eastus"
+}
+# create a storage account for terraform state storage
+resource "azurerm_storage_account" "tfstate_sa" {
+  name                     = "terraformstate201111"
+  resource_group_name      = azurerm_resource_group.tfstate_rg.name
+  location                 = azurerm_resource_group.tfstate_rg.location
+  account_tier             = "Standard"
+  account_replication_type = "LRS"
+}
+# create a storage container for terraform state storage
+resource "azurerm_storage_container" "tfstate_container" {
+  name                  = "tfstatefiles"
+  storage_account_name  = azurerm_storage_account.tfstate_sa.name
+  container_access_type = "private"
+}
 #####################################################################
 # Block-2: Provider Block
 provider "azurerm" {
